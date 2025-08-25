@@ -9,6 +9,8 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
+  access_key = var.myaccess-key
+  secret_key = var.my-secret
   region = "ap-south-1"
 }
 
@@ -58,4 +60,5 @@ resource "local_file" "example_private_key" {
   filename       = "my-terraform-key.pem"
   file_permission = "0400"
 }
+
 
