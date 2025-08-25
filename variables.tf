@@ -1,3 +1,7 @@
-variable "myaccess-key" {}
+variable "myaccess-key" {
+  type = string
+}
 
-variable "my-secret" {}
+variable "my-secret" {
+  type = string
+}
